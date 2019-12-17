@@ -1,8 +1,8 @@
 import math
 Exit = 0
 spisok =[]
-max=0
-min=0
+maxS=0
+minS=0
 while Exit == 0:
     i = 0
     print("Ввести a")
@@ -30,15 +30,19 @@ while Exit == 0:
                 print("Значения не принадлежат области определения функции.")
                 x = x1-1
                 continue
+        maxS = max(spisok)
+        minS = min(spisok)
     elif ch == 2:
         while x1 <= x and x <= x2:
             f1 = (60 * (a**2) + 88* (a*x) +21 * (x**2))
-            if f1 != 1 and f1 == 1:
+            if f1 != 1 and f1 != 1:
                 f = math.tan(60*a*a+88*a*x-21*x*x)
                 spisok.append(f)
                 print('Аргумент x = {:2f}\t Значение = {:2f}'.format(x, spisok[i]))
                 x = x + Step
                 i = i+1
+                maxS = max(spisok)
+                minS = min(spisok)
             else:
                 print("Значения не принадлежат области определения функции.")
                 x=x1-1
@@ -57,11 +61,11 @@ while Exit == 0:
                 print("Значения не принадлежат области определения функции.")
                 x = x1-1
                 continue
+        maxS = max(spisok)
+        minS = min(spisok)
     else:
         print("Нет такой функции.")
-    max = max(spisok)
-    min = min(spisok)
-    print('Максимум'+str(max))
-    print('Минимум'+str(min))
+    print('Максимум'+str(maxS))
+    print('Минимум'+str(minS))
     print("Выйти из программы?(1-да, 0-нет)")
     Exit = int(input())
