@@ -15,11 +15,11 @@ if (var== 1)
     {
         if (3 * (a*a) - 7 * a * x + 4 * x * x == 0)
     {
-        g = -((7) * (20 *(a*a) + 11 * a * x - ( 45 * (x*x)))) / (3 *(a*a) - 7 * a * x + 4*x*x);
         printf("Nevernoe zna4enie");
     }
         else
     {
+        g = -((7) * (20 *(a*a) + 11 * a * x - ( 45 * (x*x)))) / (3 *(a*a) - 7 * a * x + 4*x*x);
         printf("g=%f\n",g);
     }
     }
