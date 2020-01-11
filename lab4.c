@@ -10,7 +10,7 @@ exitt = 0;
 while (exitt == 0)
 {
     n = 0;
-    printf ("Vvedite na4al'noe a: ");
+    printf ("Vvedite a: ");
     scanf ("%f" , &a);
     printf ("Vvedite nomer: ");
     scanf ("%int", &var);
